@@ -1,10 +1,16 @@
 const Step2 = ({ formData, onChange }) => (
   <div>
-    <h2>Step 2: Address Details</h2>
-    <label>Address:</label>
-    <input type="text" name="address" value={formData.address} onChange={onChange} />
-    <label>City:</label>
-    <input type="text" name="city" value={formData.city} onChange={onChange} />
+    <h2>The Declaration of Independence was signed in 1776</h2>
+
+    <label for="question">
+      True
+      <input type="radio" name="question" value={formData.question} onChange={onChange} />
+    </label>
+
+    <label for="question">
+      False
+      <input type="radio" name="question" value={formData.question} onChange={onChange} />
+    </label>
   </div>
 );
 

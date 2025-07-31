@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        // brand: "#3557FF",
-        // medscape: "#064aa7",
+        primary: "#1C3CB0",
+        secondary: "#DB3C10",
       },
       fontFamily: {
         // lato: ["Lato", "sans-serif"],
