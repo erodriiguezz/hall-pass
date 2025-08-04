@@ -8,8 +8,7 @@ export default {
         secondary: "#DB3C10",
       },
       fontFamily: {
-        // lato: ["Lato", "sans-serif"],
-        // inter: ["Inter", "ui-sans-serif", "system-ui"],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },
