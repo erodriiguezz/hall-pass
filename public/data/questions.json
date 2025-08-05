@@ -1,0 +1,22 @@
+[
+  {
+    "question": "The Declaration of Independence was signed in 1776",
+    "options": ["True", "False"],
+    "answer": 0
+  },
+  {
+    "question": "When was the Emancipation Proclamation given?",
+    "options": ["1963", "1964", "1965", "1966"],
+    "answer": 0
+  },
+  {
+    "question": "What does PS Management stand for?",
+    "options": ["Por Siempre Management", "Piece of Shit Management", "Paquita Salas Management"],
+    "answer": 2
+  },
+  {
+    "question": "What binded the US before the Constitution?",
+    "options": ["Declaration of Independence", "Common Sense", "Articles of Confederation", "Monroe Doctrine"],
+    "answer": 2
+  }
+]
