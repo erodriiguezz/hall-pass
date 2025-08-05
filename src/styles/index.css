@@ -1,13 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
+@layer base {
+  body {
+    @apply font-lato;
+  }
 }
 
 *,
@@ -20,18 +20,17 @@
   margin: 0;
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  /* color: #707070; */
+  line-height: 1.25;
 }
 
 img,
@@ -65,11 +64,6 @@ p {
   text-wrap: pretty;
 }
 
-h1 {
-  font-size: 3em;
-  line-height: 1.1;
-}
-
 h1,
 h2,
 h3,
@@ -82,10 +76,4 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
 }

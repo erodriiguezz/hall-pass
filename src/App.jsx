@@ -33,16 +33,16 @@ const App = () => {
 
   return (
     <div className="w-screen h-screen p-6">
-      <div className="w-full h-full flex flex-col items-center justify-center bg-gray-100 rounded-xl p-6">
-        <div>
-          {currentStep === 1 && <Step1 formData={formData.step1} onChange={handleInputChange} />}
+      <div className="w-full h-full content-center bg-blue-50 rounded-2xl p-6">
+        <div className="w-full">
+          {currentStep === 1 && <Step1 formData={formData.step1} onChange={handleInputChange} onClick={nextStep} />}
           {currentStep === 2 && <Step2 formData={formData.step2} onChange={handleInputChange} />}
           {currentStep === 3 && <Step3 formData={formData.step3} onChange={handleInputChange} />}
         </div>
 
         <div>
           {/* {currentStep > 1 && <button onClick={prevStep}>Previous</button>} */}
-          {currentStep < 3 && <button onClick={nextStep}>Next</button>}
+          {/* {currentStep < 3 && <button onClick={nextStep}>Next</button>} */}
           {/* {currentStep === 3 && <button>Submit</button>} */}
         </div>
       </div>
